@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+    font-size: 18px;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2, h3, h4{
+      color:hsl(210, 10%, 33%);
+}
+p{
+    color:hsl(210, 10%, 33%);
+}
+.btn{
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 200;
+    padding: 10px 20px;
+    color: #ffffff;
+    margin: 30px 10px 0;
+}
+.cyan{
+    background: hsl(171, 66%, 44%);
+    border: 2px solid hsl(171, 66%, 44%);
+    box-shadow: 1px 1px 5px hsl(171, 66%, 44%), 1px 1px 5px hsl(171, 66%, 44%);
+}
+
+.blue{
+    background: hsl(233, 100%, 69%);
+    border: 2px solid hsl(233, 100%, 69%);
+    box-shadow: 1px 1px 5px hsl(233, 100%, 69%), 1px 1px 5px hsl(233, 100%, 69%);
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+/*Header*/
+.header{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/clipboard-landing-page-master/images/bg-header-desktop.png');
+    background-size: cover ;
+    background-position: center/cover;
+}
+.logo{
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.content{
+    text-align: center;
+    padding: 35px 0;
+    width: 50%;
+}
+.content h2, p{
+    padding: 5px 0;
+}
+/*Snippet*/
+.snippet{
+  text-align: center;
+  width: 45%;
+  margin: auto;
+}
+.snippet h2
+{
+    padding: 5px 0;
+}
+
+/*Computer*/
+.computer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0;
+}
+.computer-img img{
+    height: 100%;
+    width: 80%;
+}
+.computer-content div{
+    margin-top: 40px;
+    width: 65%;
+}
+
+/*Access*/
+.access{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.access img{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+.access div:first-child{
+    padding: 70px 0;
+    width: 65%;
+    margin: auto;
+}
+
+/*Function*/
+.function{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+}
+.function div{
+    width: 26%;
+    margin: 0 30px;
+}
+.function div img{
+    margin: 10px 0 20px 0;
+}
+
+/*Icons*/
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 40px;
+    margin: 50px 30px;
+}
+
+/*OS*/
+.OS{
+    text-align: center;
+    width: 46%;
+    margin:auto;
+    padding-bottom: 100px;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(242, 243, 250);
+    padding-top: 10px;
+}
+footer .footer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+.footer_logo img{
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+}
+.footer ul{
+    list-style: none;
+    max-width: 400px;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+.footer ul li a{
+    color: hsl(210, 10%, 33%)
+}
+.footer ul li a:hover{
+    color: hsl(171, 66%, 44%);
+}
+footer .social_link{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+}
+footer p{
+    text-align: center;
+}
+
+
+/*Mobile Devices*/
+@media (max-width: 760px){
+    .header{
+        background: url('/clipboard-landing-page-master/images/bg-header-mobile.png');
+        background-size: cover;
+        padding: 60px 10px;
+    }
+    .content{
+        width: 80%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .snippet{
+        width: 70%;
+        text-align: center;
+    }
+    .computer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .computer-img img{
+        padding-left: 20%;
+    }
+    .computer-content div{
+        width: 76%;
+        margin: 60px 12% auto;
+        text-align: center;
+    }
+    .computer-content:first-child p{
+        -webkit-line-clamp: 3;
+    }
+    .computer-content:last-child p{
+        -webkit-line-clamp: 2;
+    }
+    .access div:first-child{
+        width: 75%;
+    }
+    .function{
+        display:grid;
+    }
+    .function div{
+        width: 85%;
+    }
+    .icons{
+        display: grid;
+        grid-gap: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+    .OS{
+        width: 84%;
+    }
+    footer .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer ul li{
+        display: grid;
+        margin: 20px 0;
+    }
+    .footer .social_link a{
+        margin: 10px;
+    }
+
+}
