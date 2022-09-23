@@ -58,7 +58,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('/clipboard-landing-page-master/images/bg-header-desktop.png');
+    background: url('../clipboard-landing-page-master/images/bg-header-desktop.png');
     background-size: cover ;
     background-position: center/cover;
 }
@@ -192,7 +192,7 @@ footer p{
 /*Mobile Devices*/
 @media (max-width: 760px){
     .header{
-        background: url('/clipboard-landing-page-master/images/bg-header-mobile.png');
+        background: url('../clipboard-landing-page-master/images/bg-header-mobile.png');
         background-size: cover;
         padding: 60px 10px;
     }
